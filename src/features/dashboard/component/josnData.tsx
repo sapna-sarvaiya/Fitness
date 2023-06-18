@@ -1,3 +1,6 @@
+import {GiBurningMeteor,GiBodyHeight,GiWeightLiftingUp,GiCycling,GiHiking} from 'react-icons/gi';
+import { FaChild,FaRunning,FaSwimmer } from "react-icons/fa";
+import { MdSportsGymnastics} from "react-icons/md";
 const jsonData = {
     "user": {
         "id": "123456",
@@ -5,19 +8,21 @@ const jsonData = {
         "email": "johndoe@example.com",
         "age": 30,
         "height": 180,
-        "weight": 75
+        "weight": 75,
+        "loss-weight":60
     },
     "activities": [
         {
             "id": "activity_1",
             "name": "Running",
+            "icon":<FaRunning size={'35px'}/>,
             "date": "2023-06-08",
             "duration": 45,
-            "distance": 6.2,
+            "distance": 6.2,    
             "calories_burned": 500,
             "heart_rate": {
-                "average": 150,
-                "max": 175
+                "average": 50,
+                "max": 75
             },
             "steps": 8000,
             "pace": {
@@ -29,13 +34,14 @@ const jsonData = {
         {
             "id": "activity_2",
             "name": "Cycling",
+            "icon":<GiCycling size={'35px'}/>,
             "date": "2023-06-07",
             "duration": 60,
             "distance": 15.3,
             "calories_burned": 700,
             "heart_rate": {
-                "average": 135,
-                "max": 160
+                "average": 60,
+                "max": 80
             },
             "steps": 5000,
             "speed": {
@@ -47,12 +53,13 @@ const jsonData = {
         {
             "id": "activity_3",
             "name": "Strength Training",
+            "icon":<MdSportsGymnastics size={'35px'}/>,
             "date": "2023-06-06",
             "duration": 75,
             "calories_burned": 400,
             "heart_rate": {
-                "average": 120,
-                "max": 145
+                "average": 20,
+                "max": 15
             },
             "reps": {
                 "total": 120,
@@ -67,13 +74,14 @@ const jsonData = {
         {
             "id": "activity_4",
             "name": "Swimming",
+            "icon":<FaSwimmer size={'35px'}/>,
             "date": "2023-06-05",
             "duration": 60,
             "distance": 1.5,
             "calories_burned": 350,
             "heart_rate": {
-                "average": 125,
-                "max": 140
+                "average": 60,
+                "max": 70
             },
             "laps": 20,
             "pool_length": 25
@@ -81,187 +89,18 @@ const jsonData = {
         {
             "id": "activity_5",
             "name": "Hiking",
+            "icon":<GiHiking     size={'35px'}/>,
             "date": "2023-06-04",
             "duration": 120,
             "distance": 8.5,
             "calories_burned": 600,
             "heart_rate": {
-                "average": 130,
-                "max": 155
+                "average": 100,
+                "max": 150
             },
             "elevation_gain": 450
         },
-        {
-            "id": "activity_6",
-            "name": "Yoga",
-            "date": "2023-06-03",
-            "duration": 60,
-            "calories_burned": 200,
-            "heart_rate": {
-                "average": 90,
-                "max": 110
-            }
-        },
-        {
-            "id": "activity_7",
-            "name": "Elliptical",
-            "date": "2023-06-02",
-            "duration": 45,
-            "calories_burned": 400,
-            "heart_rate": {
-                "average": 125,
-                "max": 150
-            },
-            "distance": 5.0,
-            "strides": 3500
-        },
-        {
-            "id": "activity_8",
-            "name": "Basketball",
-            "date": "2023-06-01",
-            "duration": 90,
-            "calories_burned": 800,
-            "heart_rate": {
-                "average": 140,
-                "max": 165
-            }
-        },
-        {
-            "id": "activity_9",
-            "name": "Pilates",
-            "date": "2023-05-31",
-            "duration": 60,
-            "calories_burned": 250,
-            "heart_rate": {
-                "average": 100,
-                "max": 120
-            }
-        },
-        {
-            "id": "activity_10",
-            "name": "Rowing",
-            "date": "2023-05-30",
-            "duration": 30,
-            "distance": 2.5,
-            "calories_burned": 300,
-            "heart_rate": {
-                "average": 115,
-                "max": 135
-            },
-            "strokes": 500
-        },
-        {
-            "id": "activity_11",
-            "name": "Kickboxing",
-            "date": "2023-05-29",
-            "duration": 60,
-            "calories_burned": 600,
-            "heart_rate": {
-                "average": 150,
-                "max": 170
-            }
-        },
-        {
-            "id": "activity_12",
-            "name": "Soccer",
-            "date": "2023-05-28",
-            "duration": 120,
-            "calories_burned": 800,
-            "heart_rate": {
-                "average": 145,
-                "max": 170
-            }
-        },
-        {
-            "id": "activity_13",
-            "name": "CrossFit",
-            "date": "2023-05-27",
-            "duration": 60,
-            "calories_burned": 500,
-            "heart_rate": {
-                "average": 155,
-                "max": 180
-            }
-        },
-        {
-            "id": "activity_14",
-            "name": "Tennis",
-            "date": "2023-05-26",
-            "duration": 90,
-            "calories_burned": 700,
-            "heart_rate": {
-                "average": 140,
-                "max": 165
-            }
-        },
-        {
-            "id": "activity_15",
-            "name": "Dancing",
-            "date": "2023-05-25",
-            "duration": 45,
-            "calories_burned": 300,
-            "heart_rate": {
-                "average": 120,
-                "max": 145
-            }
-        },
-        {
-            "id": "activity_16",
-            "name": "Pilates",
-            "date": "2023-05-24",
-            "duration": 60,
-            "calories_burned": 250,
-            "heart_rate": {
-                "average": 100,
-                "max": 120
-            }
-        },
-        {
-            "id": "activity_17",
-            "name": "Rowing",
-            "date": "2023-05-23",
-            "duration": 30,
-            "distance": 2.5,
-            "calories_burned": 300,
-            "heart_rate": {
-                "average": 115,
-                "max": 135
-            },
-            "strokes": 500
-        },
-        {
-            "id": "activity_18",
-            "name": "Kickboxing",
-            "date": "2023-05-22",
-            "duration": 60,
-            "calories_burned": 600,
-            "heart_rate": {
-                "average": 150,
-                "max": 170
-            }
-        },
-        {
-            "id": "activity_19",
-            "name": "Soccer",
-            "date": "2023-05-21",
-            "duration": 120,
-            "calories_burned": 800,
-            "heart_rate": {
-                "average": 145,
-                "max": 170
-            }
-        },
-        {
-            "id": "activity_20",
-            "name": "CrossFit",
-            "date": "2023-05-20",
-            "duration": 60,
-            "calories_burned": 500,
-            "heart_rate": {
-                "average": 155,
-                "max": 180
-            }
-        }
+    
     ]
 }
 

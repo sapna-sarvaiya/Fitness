@@ -573,6 +573,15 @@
 	@include marginBottom(auto);
 }
 
+.ml---60{
+@include marginLeft(-60px);
+}
+.ml---20{
+	@include marginLeft(-20px);
+	}
+	.ml---10{
+		@include marginLeft(-10px);
+		}
 .ml--0 {
 	@include marginLeft(0);
 }
@@ -623,6 +632,10 @@
 
 .ml--45 {
 	@include marginLeft(40px);
+}
+
+.ml--60 {
+	@include marginLeft(60px);
 }
 
 .ml--auto {
@@ -680,7 +693,9 @@
 .pt--25 {
 	@include paddingTop(25px);
 }
-
+.pt--50{
+	@include paddingTop(50px);
+}
 .pt--70 {
 	@include paddingTop(70px);
 }
@@ -732,7 +747,9 @@
 .pb--20 {
 	@include paddingBottom(20px);
 }
-
+.pb--50{
+	@include paddingBottom(50px);
+}
 .pl--0 {
 	@include paddingLeft(0);
 }
@@ -1348,4 +1365,19 @@
 
 .text--success {
 	color: $success;
+}
+.chart-height{
+	height: 250px;
+}
+.header{
+	box-shadow: 0 5px 20px -4px #25263678
+}
+.height-100vh{
+height: 100vh;
+}
+.logo-wrapper{
+	margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+
 }
