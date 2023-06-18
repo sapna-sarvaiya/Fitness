@@ -7,7 +7,6 @@ import { GiDuration ,GiPathDistance} from "react-icons/gi";
 
 import {GiBurningMeteor,GiBodyHeight,GiWeightLiftingUp,GiCycling,GiHiking} from 'react-icons/gi';
 import { FaChild,FaRunning,FaSwimmer,FaBurn } from "react-icons/fa";
-import { GrYoga} from "react-icons/gr";
 
 
 import jsonData from '../component/josnData';
@@ -45,8 +44,8 @@ useEffect(() => {
                 <div className="row">
                     <div className="box col-lg-3">
                      <div className='box-wrapper cursor--pointer cal d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3 flex--column'>
-                      <FaBurn className='icon cal-icon' size={'45px'}/>
-                            <p className="fs-normal mb-0 pt--10 pb--10">Total Calory</p>
+                      <FaBurn className='icon cal-icon' size={'55px'}/>
+                            <h5 className="fs-normal mb-0 pt--25 pb--15">Total Calory</h5>
                         <div className="ms-3">
                                 <h3 className="mb-0">{totalCalory}Kal</h3>
                         </div>
@@ -54,8 +53,8 @@ useEffect(() => {
                     </div>
                     <div className="box col-lg-3">
                    <div className='box-wrapper cursor--pointer heart d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3 flex--column'>
-                    <BsHeartPulseFill className='icon heart-icon' size={'45px'}/>
-                            <p className="fs-normal mb-0 pt--10 pb--10">Max HeartRate </p>
+                    <BsHeartPulseFill className='icon heart-icon' size={'55px'}/>
+                            <h5 className="fs-normal mb-0 pt--25 pb--15">Max HeartRate </h5>
                         <div className="ms-3">
                                 <h3 className="mb-0">{maxHeartRate}</h3>
                         </div>
@@ -63,8 +62,8 @@ useEffect(() => {
                     </div>
                     <div className="box  col-lg-3 ">
                     <div className='box-wrapper cursor--pointer time d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3 flex--column'>
-                      <GiDuration className='icon time-icon' size={'45px'}/>
-                            <p className="fs-normal mb-0 pt--10 pb--10">Total Duration</p>
+                      <GiDuration className='icon time-icon' size={'55px'}/>
+                            <h5 className="fs-normal mb-0 pt--25 pb--15">Total Duration</h5>
                         <div className="ms-3">
                                 <h3 className="mb-0">{totalDuration}Hrs</h3>
                         </div>
@@ -72,8 +71,8 @@ useEffect(() => {
                     </div>
                     <div className="box col-lg-3">
                      <div className='box-wrapper cursor--pointer map d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3 flex--column'>
-                      <GiPathDistance className='icon map-icon' size={'45px'}/>
-                            <p className="fs-normal mb-0 pt--10 pb--10">Total Running Distance</p>
+                      <GiPathDistance className='icon map-icon' size={'55px'}/>
+                            <h5 className="fs-normal mb-0 pt--25 pb--15">Total Running Distance</h5>
                         <div className="ms-3">
                                 <h3 className="mb-0">{totalDistance}Km</h3>
                         </div>
@@ -87,7 +86,7 @@ useEffect(() => {
     <div className="row">
     <div className="col-lg-4">
           <div className="chart-container rounded-2 p-5">
-          <div className='d-flex'>
+          <div className='d-flex align-items--center'>
             <h3 className="fs-6 mb-3">Duration</h3>
             <GiDuration className='icon time-icon ml--20' size={'70px'}/>
             </div>
@@ -96,18 +95,18 @@ useEffect(() => {
         </div>
         <div className="col-lg-4">
           <div className="chart-container rounded-2 p-5 height--100px">
-            <div className='d-flex'>
+            <div className='d-flex align-items--center'>
             <h3 className="fs-6 mb-3">Heart Rate</h3>
-           <BsHeartPulseFill className='icon ml--20 heart-icon' size={'60px'}/>
+           <BsHeartPulseFill className='icon ml--20 heart-icon' size={'70px'}/>
            </div>
             <HeartRateChart/>
           </div>
         </div>
         <div className="col-lg-4">
           <div className="chart-container rounded-2 p-5">
-          <div className='d-flex'>
-            <h3 className="fs-6 mb-3">calory</h3>
-            <GiBurningMeteor className='icon cal-icon ml--20' size={'60px'}/>
+          <div className='d-flex align-items--center'>
+            <h3 className="fs-6 mb-3">Calory</h3>
+            <GiBurningMeteor className='icon cal-icon ml--20' size={'70px'}/>
             </div>
             <CaloryChart/>
           </div>

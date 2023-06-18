@@ -45,7 +45,7 @@ const DurationChart = () => {
       };
 
       return (
-        <div className=' mb--20 text--white'>
+        <div className=' mb--20 text--white '>
           <Bar data={chartData} options={chartOptions} />
         </div>
       )

@@ -15,7 +15,7 @@ const jsonData = {
         {
             "id": "activity_1",
             "name": "Running",
-            "icon":<FaRunning size={'35px'}/>,
+            "icon":<FaRunning size={'45px'}/>,
             "date": "2023-06-08",
             "duration": 45,
             "distance": 6.2,    
@@ -29,12 +29,105 @@ const jsonData = {
                 "average": 7.3,
                 "best": 6.5
             },
-            "elevation_gain": 80
+            "elevation_gain": 80,
+            "dailyActivity":[
+                {
+            "id": "day_1",
+            "name": "day1",
+            "date": "2023-06-08",
+            "duration": 30,
+            "distance": 2.2,    
+            "calories_burned": 200,
+            "heart_rate": {
+                "average": 60,
+                "max": 75
+            },
+            "steps": 4000,
+            },
+            {
+                "id": "day_2",
+            "name": "day2",
+                "date": "2023-06-09",
+                "duration": 40,
+                "distance": 4.2,    
+                "calories_burned": 400,
+                "heart_rate": {
+                    "average": 50,
+                    "max": 60
+                },
+                "steps": 5000,
+                },
+                {
+                    "id": "day_3",
+                     "name": "day3",
+                    "date": "2023-06-11",
+                    "duration": 55,
+                    "distance": 6.2,    
+                    "calories_burned": 100,
+                    "heart_rate": {
+                        "average": 40,
+                        "max": 70
+                    },
+                    "steps": 8000,
+                    },
+                    {
+                        "id": "day_4",
+                         "name": "day4",
+                        "date": "2023-06-12",
+                        "duration": 30,
+                        "distance": 1.2,    
+                        "calories_burned": 100,
+                        "heart_rate": {
+                            "average": 60,
+                            "max": 90
+                        },
+                        "steps": 2000,
+                        },
+                        {
+                            "id": "day_5",
+                             "name": "day5",
+                            "date": "2023-06-13",
+                            "duration": 40,
+                            "distance": 6.2,    
+                            "calories_burned": 120,
+                            "heart_rate": {
+                                "average": 80,
+                                "max": 90
+                            },
+                            "steps": 8000,
+                            },
+                            {
+                                "id": "day_3",
+                                 "name": "day3",
+                                "date": "2023-06-11",
+                                "duration": 55,
+                                "distance": 6.2,    
+                                "calories_burned": 200,
+                                "heart_rate": {
+                                    "average": 40,
+                                    "max": 70
+                                },
+                                "steps": 8000,
+                                }
+                                ,{
+                                    "id": "day_3",
+                                     "name": "day3",
+                                    "date": "2023-06-11",
+                                    "duration": 55,
+                                    "distance": 6.2,    
+                                    "calories_burned": 200,
+                                    "heart_rate": {
+                                        "average": 40,
+                                        "max": 70
+                                    },
+                                    "steps": 8000,
+                                    }
+        ]
         },
         {
             "id": "activity_2",
             "name": "Cycling",
-            "icon":<GiCycling size={'35px'}/>,
+            "icon":<GiCycling size={'45px'}/>,
             "date": "2023-06-07",
             "duration": 60,
             "distance": 15.3,
@@ -53,7 +146,7 @@ const jsonData = {
         {
             "id": "activity_3",
             "name": "Strength Training",
-            "icon":<MdSportsGymnastics size={'35px'}/>,
+            "icon":<MdSportsGymnastics size={'45px'}/>,
             "date": "2023-06-06",
             "duration": 75,
             "calories_burned": 400,
@@ -74,7 +167,7 @@ const jsonData = {
         {
             "id": "activity_4",
             "name": "Swimming",
-            "icon":<FaSwimmer size={'35px'}/>,
+            "icon":<FaSwimmer size={'45px'}/>,
             "date": "2023-06-05",
             "duration": 60,
             "distance": 1.5,
@@ -89,7 +182,7 @@ const jsonData = {
         {
             "id": "activity_5",
             "name": "Hiking",
-            "icon":<GiHiking     size={'35px'}/>,
+            "icon":<GiHiking     size={'45px'}/>,
             "date": "2023-06-04",
             "duration": 120,
             "distance": 8.5,

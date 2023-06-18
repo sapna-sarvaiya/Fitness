@@ -4,6 +4,7 @@ import { Progress, Space } from 'antd';
 import jsonData from './josnData';
 import { BsHeartPulseFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { FaHome } from 'react-icons/fa';
 
 const NavBar = () => {
     return (
@@ -18,6 +19,9 @@ const NavBar = () => {
                         </Link>
                     </div>
                     <ul className='nav-list'>
+                      <li className='has-dropdown pb--15 pt--15'>
+                        <Link to={'/'}><FaHome size={'35px'}/></Link>
+                      </li>
                         {jsonData.activities.map((item, index) => (
                             <li className='has-dropdown pb--15 pt--15'>
                                 <Link
