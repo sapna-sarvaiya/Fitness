@@ -9,10 +9,10 @@ const Hiking = () => {
     return (
         <div id='wrapper'>
             <section className='heading'>
-                <h1>{jsonData.activities[4].icon} Hiking Activity</h1>
+                <div>{jsonData.activities[4].icon} </div> <h1>Hiking Activity</h1>
             </section>
             <div className='row d-flex align-items--center'>
-                <section className='col-lg-6  '>
+                <section className='col-lg-6 cards'>
                     <div className='row'>
                         <div className='box col-lg-6 mb--20'>
                             <div className='box-wrapper box-details cursor--pointer cal d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-4 flex--column'>
@@ -124,7 +124,7 @@ const Hiking = () => {
                     </div></section>
                 <section className="charts mt-4 col-lg-6">
                     <div className='chart-container rounded-2 p-5'>
-                        <div className='d-flex align-item--center'>
+                        <div className='d-flex align-item--center activity-title'>
                             <GiHiking
                                 className='icon run-icon ml--20'
                                 size={'50px'} color='white'

@@ -80,11 +80,11 @@ const StrengthChart = () => {
     };
 
     return (
-        <div className=' mb--20 text--white d-flex row'>
-            <div className='col-6 pl--10'>
+        <div className=' mb--20 chart-section text--white d-flex row'>
+            <div className='col-6 pl--10 chart-wrapper'>
                 <Bar data={chartData} options={chartOptions} />
             </div>
-            <div className='col-6 pl--15'>
+            <div className='col-6 pl--15 chart-wrapper'>
                 <Line data={BarChart} options={chartOptions} />
             </div>
         </div>

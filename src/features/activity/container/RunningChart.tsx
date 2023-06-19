@@ -91,11 +91,11 @@ const RunningChart = () => {
   };
 
   return (
-    <div className=' mb--20 text--white d-flex row'>
-      <div className='col-6 pl--10'>
+    <div className='chart-section mb--20 text--white d-flex row'>
+      <div className='col-6 pl--10 chart-wrapper'>
         <Bar data={BarChartData} options={chartOptions} />
       </div>
-      <div className='col-6 pl--15'>
+      <div className='col-6 pl--15 chart-wrapper'>
         <Line data={chartData} options={chartOptions} />
       </div>
     </div>

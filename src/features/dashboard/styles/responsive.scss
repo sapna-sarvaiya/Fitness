@@ -1,0 +1,41 @@
+@media (max-width: 767px){
+    .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px !important;
+    margin-top: 30px;
+    h1{
+        font-size: 30px;
+    }
+
+    }
+    .cards{
+        padding-top: 20px !important;
+    }
+    .charts{
+        .chart-padding{
+            padding:0px;
+        }
+        display: flex;
+        flex-direction: column;
+    .chart-container{
+        background-color:transparent !important;
+        .chart-section{
+            flex-direction: column;
+            margin-left: -160px;
+            .chart-wrapper{
+                max-width: 100%;
+            }
+            &.swimming-chart{    
+                  margin-left: 40px;
+            }
+        }
+        .activity-title{
+        margin-left: -100px;
+        }
+    }
+    }
+    
+}
+

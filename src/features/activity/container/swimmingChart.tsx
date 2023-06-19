@@ -80,11 +80,11 @@ const SwimmmingChart = () => {
     };
 
     return (
-        <div className=' mb--20 text--white d-flex row'>
-            <div className='col-6 pl--10'>
+        <div className='chart-section mb--20 text--white d-flex row'>
+            <div className='col-6 pl--10 chart-wrapper swimming-chart'>
                 <Bar data={chartData} options={chartOptions} />
             </div>
-            <div className='col-6 pl--15'>
+            <div className='col-6 pl--15 chart-wrapper swimming-chart'>
                 <Line data={BarChart} options={chartOptions} />
             </div>
         </div>

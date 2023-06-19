@@ -79,7 +79,7 @@ const Dashboard = () => {
         </section>
         <section className="charts mt-4">
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-4 chart-padding mb--20">
               <div className="chart-container rounded-2 p-5">
                 <div className='d-flex align-items--center'>
                   <h3 className="fs-6 mb-3">Duration</h3>
@@ -88,7 +88,7 @@ const Dashboard = () => {
                 <DurationChart />
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 chart-padding mb--20">
               <div className="chart-container rounded-2 p-5 height--100px">
                 <div className='d-flex align-items--center'>
                   <h3 className="fs-6 mb-3">Heart Rate</h3>
@@ -97,7 +97,7 @@ const Dashboard = () => {
                 <HeartRateChart />
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 chart-padding mb--20">
               <div className="chart-container rounded-2 p-5">
                 <div className='d-flex align-items--center'>
                   <h3 className="fs-6 mb-3">Calories Burn</h3>

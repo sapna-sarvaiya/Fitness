@@ -8,11 +8,11 @@ const Swimming = () => {
 
     return (
         <div id='wrapper'>
-            <section className='heading'>
-                <h1>{jsonData.activities[3].icon} Swimming Activity</h1>
+            <section className='heading d-flex'>
+                <div className='ml--10'> {jsonData.activities[3].icon}</div><h1> Swimming Activity</h1>
             </section>
             <div className='row d-flex align-items--center pt--25'>
-                <section className='col-lg-6  '>
+                <section className='col-lg-6 cards pt--50 '>
                     <div className='row'>
                         <div className='box col-lg-6 mb--20'>
                             <div className='box-wrapper box-details cursor--pointer cal d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-4 flex--column'>
@@ -86,14 +86,13 @@ const Swimming = () => {
                         </div>
                     </div></section>
                 <section className="charts mt-4 col-lg-6">
-                    <div className='chart-container rounded-2'>
-                        <div className='d-flex align-item--center'>
+                    <div className='chart-container rounded-2 p-5'>
+                        <div className='d-flex align-item--center activity-title'>
                             <FaSwimmer
                                 className='icon run-icon ml--20 mt--20'
                                 size={'50px'} color='white'
                             />
                             <h3 className='fs-6 mb-3 ml--10 pt--20'>Swimming Activity Chart</h3>
-
                         </div>
                         <SwimmmingChart />
                     </div>

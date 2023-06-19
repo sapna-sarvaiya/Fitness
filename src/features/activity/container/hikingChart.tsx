@@ -81,11 +81,11 @@ const HikingChart = () => {
     };
 
     return (
-        <div className=' mb--20 text--white d-flex row'>
-            <div className='col-6'>
+        <div className='chart-section mb--20 text--white d-flex row'>
+            <div className='col-6 chart-wrapper'>
                 <Bar data={chartData} options={chartOptions} />
             </div>
-            <div className='col-6'>
+            <div className='col-6 chart-wrapper'>
                 <Line data={BarChartData} options={chartOptions} />
             </div>
         </div>
