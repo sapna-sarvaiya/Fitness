@@ -2,13 +2,13 @@ import { Bar, Line } from 'react-chartjs-2';
 import 'chart.js/auto';
 import jsonData from '../../dashboard/component/josnData';
 
-const HikingChart = () => {
+const StrengthChart = () => {
     const chartData = {
-        labels: jsonData.activities[4].dailyActivity?.map((item, index) => item.name),
+        labels: jsonData.activities[2].dailyActivity?.map((item, index) => item.name),
         datasets: [
             {
                 label: 'duration',
-                data: jsonData.activities[4].dailyActivity?.map((item, index) => item.duration),
+                data: jsonData.activities[2].dailyActivity?.map((item, index) => item.duration),
                 backgroundColor: "gray",
                 borderColor: 'gray',
                 borderWidth: 2.5,
@@ -16,7 +16,7 @@ const HikingChart = () => {
             },
             {
                 label: 'distance',
-                data: jsonData.activities[4].dailyActivity?.map((item, index) => item.distance),
+                data: jsonData.activities[2].dailyActivity?.map((item, index) => item.distance),
                 backgroundColor: "blue",
                 borderColor: 'blue',
                 borderWidth: 2.5,
@@ -24,7 +24,7 @@ const HikingChart = () => {
             },
             {
                 label: 'Calories Burn',
-                data: jsonData.activities[4].dailyActivity?.map((item, index) => item.calories_burned),
+                data: jsonData.activities[2].dailyActivity?.map((item, index) => item.calories_burned),
                 backgroundColor: "white",
                 borderColor: 'white',
                 borderWidth: 2.5,
@@ -32,13 +32,12 @@ const HikingChart = () => {
             }
         ]
     };
-
-    const BarChartData = {
+    const BarChart = {
         labels: jsonData.activities[0].dailyActivity?.map((item, index) => item.name),
         datasets: [
             {
                 label: 'Heart Rate (max)',
-                data: jsonData.activities[0].dailyActivity?.map((item, index) => item.heart_rate.max),
+                data: jsonData.activities[2].dailyActivity?.map((item, index) => item.heart_rate.max),
                 backgroundColor: "blue",
                 borderColor: 'blue',
                 borderWidth: 2.5,
@@ -46,7 +45,7 @@ const HikingChart = () => {
             },
             {
                 label: 'Heart Rate (avg)',
-                data: jsonData.activities[0].dailyActivity?.map((item, index) => item.heart_rate.average),
+                data: jsonData.activities[2].dailyActivity?.map((item, index) => item.heart_rate.average),
                 backgroundColor: "white",
                 borderColor: 'white',
                 borderWidth: 2.5,
@@ -82,13 +81,13 @@ const HikingChart = () => {
 
     return (
         <div className=' mb--20 text--white d-flex row'>
-            <div className='col-6'>
+            <div className='col-6 pl--10'>
                 <Bar data={chartData} options={chartOptions} />
             </div>
-            <div className='col-6'>
-                <Line data={BarChartData} options={chartOptions} />
+            <div className='col-6 pl--15'>
+                <Line data={BarChart} options={chartOptions} />
             </div>
         </div>
     )
 }
-export default HikingChart;
+export default StrengthChart;

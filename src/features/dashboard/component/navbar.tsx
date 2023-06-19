@@ -15,13 +15,13 @@ const NavBar = () => {
                 <div className='box d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3 flex--column justify-content--start height-100vh border-radius--xxl mt--10'>
                     <div className='logo-wrapper mb--10 cursor--pointer'>
                         <Link to={'/'}>
-                            <img src={Logo} width='50px' height='50px' />
+                            <img src={Logo} width='95px' height='90px' className='mt---40' />
                         </Link>
                     </div>
                     <ul className='nav-list'>
-                      <li className='has-dropdown pb--15 pt--15'>
-                        <Link to={'/'}><FaHome size={'35px'}/></Link>
-                      </li>
+                        <li className='has-dropdown pb--15 pt--15'>
+                            <Link to={'/'}><FaHome size={'35px'} /></Link>
+                        </li>
                         {jsonData.activities.map((item, index) => (
                             <li className='has-dropdown pb--15 pt--15'>
                                 <Link
