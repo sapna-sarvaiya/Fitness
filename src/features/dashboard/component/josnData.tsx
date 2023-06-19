@@ -97,9 +97,9 @@ const jsonData = {
                             "steps": 8000,
                             },
                             {
-                                "id": "day_3",
-                                 "name": "day3",
-                                "date": "2023-06-11",
+                                "id": "day_6",
+                                 "name": "day6",
+                                "date": "2023-06-14",
                                 "duration": 55,
                                 "distance": 6.2,    
                                 "calories_burned": 200,
@@ -110,9 +110,9 @@ const jsonData = {
                                 "steps": 8000,
                                 }
                                 ,{
-                                    "id": "day_3",
-                                     "name": "day3",
-                                    "date": "2023-06-11",
+                                    "id": "day_7",
+                                     "name": "day7",
+                                    "date": "2023-06-15",
                                     "duration": 55,
                                     "distance": 6.2,    
                                     "calories_burned": 200,
@@ -141,7 +141,101 @@ const jsonData = {
                 "average": 25.5,
                 "max": 32.8
             },
-            "elevation_gain": 120
+            "elevation_gain": 120,
+            "dailyActivity":[
+                {
+            "id": "day_1",
+            "name": "day1",
+            "date": "2023-06-08",
+            "duration": 30,
+            "distance": 9.2,    
+            "calories_burned": 200,
+            "heart_rate": {
+                "average": 60,
+                "max": 75
+            },
+            "steps": 4000,
+            },
+            {
+                "id": "day_2",
+            "name": "day2",
+                "date": "2023-06-09",
+                "duration": 40,
+                "distance": 7.2,    
+                "calories_burned": 400,
+                "heart_rate": {
+                    "average": 50,
+                    "max": 60
+                },
+                "steps": 5000,
+                },
+                {
+                    "id": "day_3",
+                     "name": "day3",
+                    "date": "2023-06-11",
+                    "duration": 55,
+                    "distance": 5.2,    
+                    "calories_burned": 100,
+                    "heart_rate": {
+                        "average": 40,
+                        "max": 70
+                    },
+                    "steps": 8000,
+                    },
+                    {
+                        "id": "day_4",
+                         "name": "day4",
+                        "date": "2023-06-12",
+                        "duration": 30,
+                        "distance": 8.2,    
+                        "calories_burned": 100,
+                        "heart_rate": {
+                            "average": 60,
+                            "max": 90
+                        },
+                        "steps": 2000,
+                        },
+                        {
+                            "id": "day_5",
+                             "name": "day5",
+                            "date": "2023-06-13",
+                            "duration": 40,
+                            "distance": 6.2,    
+                            "calories_burned": 120,
+                            "heart_rate": {
+                                "average": 80,
+                                "max": 90
+                            },
+                            "steps": 8000,
+                            },
+                            {
+                                "id": "day_6",
+                                 "name": "day6",
+                                "date": "2023-06-14",
+                                "duration": 55,
+                                "distance": 8.2,    
+                                "calories_burned": 200,
+                                "heart_rate": {
+                                    "average": 40,
+                                    "max": 70
+                                },
+                                "steps": 8000,
+                                }
+                                ,{
+                                    "id": "day_7",
+                                     "name": "day7",
+                                    "date": "2023-06-15",
+                                    "duration": 55,
+                                    "distance": 8.2,    
+                                    "calories_burned": 200,
+                                    "heart_rate": {
+                                        "average": 40,
+                                        "max": 70
+                                    },
+                                    "steps": 8000,
+                                    }
+        ]
+            
         },
         {
             "id": "activity_3",
